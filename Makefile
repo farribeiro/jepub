@@ -1,6 +1,6 @@
-all: dvi clean
+all: dvi dvi clean
 
-final: pdf clean
+final: pdf pdf clean
 
 dvi: 
 	latex livro.tex
@@ -13,3 +13,6 @@ pdf:
 
 clean:
 	rm -rf *.aux *.log *.toc
+
+clean_all: clean
+	rm -rf *.dvi *.pdf
