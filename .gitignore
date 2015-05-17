@@ -1,7 +1,10 @@
 *.aux
-*.log
-*.toc
-*.pdf
+*.avi
+*.dvi
 *.gz
-Makefile
+*.log
+*.pdf
+*.swp
+*.toc
 *.txt
+Makefile
