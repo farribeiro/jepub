@@ -1,5 +1,5 @@
 ---
-premalink: /META-INF
+permalink: /META-INF/container.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <container xmlns="urn:oasis:names:tc:opendocument:xmlns:container" version="1.0">
