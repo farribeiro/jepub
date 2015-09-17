@@ -25,7 +25,7 @@ permalink: /OEBPS/content.opf
 	<!-- Documentos -->
 	<manifest>
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
-		
+
 		<item id="introducao" href="introducao.html" media-type="application/xhtml+xml" />
 		<item id="servidores" href="servidores.html" media-type="application/xhtml+xml" />
 
@@ -38,7 +38,7 @@ permalink: /OEBPS/content.opf
 
 	<spine toc="ncx">
 		<!--itemref idref="titulo" linear="yes"/-->
-		
+
 		<itemref idref="introducao" linear="yes"/>
 		<itemref idref="servidores" linear="yes"/>
 	</spine>
