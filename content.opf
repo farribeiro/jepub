@@ -1,0 +1,42 @@
+---
+premalink: /OEBPS
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="EPB-UUID" version="2.0">
+	<metadata xmlns:opf="http://www.idpf.org/2007/opf"
+				 xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:title>Saga do primeiro ePub</dc:title>
+		<dc:creator opf:role="aut" opf:file-as="Fábio Rodrigues Ribeiro">Fábio Rodrigues Ribeiro</dc:creator>
+
+		<!-- dc:date opf:event="original-publication">2015</dc:date>
+		<dc:date opf:event="epub-publication"> </dc:date -->
+
+		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>
+		<dc:subject>Guia DevOps</dc:subject>
+		<dc:subject>Mostrando aos sysadmins como é o mundo dos developers</dc:subject>
+
+		<!-- dc:source></dc:source>
+		<dc:rights></dc:rights -->
+
+		<dc:identifier id="EPB-UUID">minhaid</dc:identifier>
+		<dc:language>pt-br</dc:language>
+	</metadata>
+
+	<!-- Documentos -->
+	<manifest>
+		<item id="titulo" href="titulo.html" media-type="application/xhtml+xml" />
+		<item id="introducao" href="introducao.html" media-type="application/xhtml+xml" />
+
+		<!-- CSS Style Sheets -->
+		<item id="main-css" href="style.css" media-type="text/css"/>
+
+		<!-- NCX -->
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+	</manifest>
+
+	<spine toc="ncx">
+		<itemref idref="titulo" linear="yes"/>
+		<itemref idref="introducao" linear="yes"/>
+	</spine>
+</package>
