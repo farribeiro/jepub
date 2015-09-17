@@ -6,7 +6,7 @@ permalink: /OEBPS/content.opf
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="EPB-UUID" version="2.0">
 	<metadata xmlns:opf="http://www.idpf.org/2007/opf"
 				 xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:title>Guia do Sysadmin</dc:title>
+		<dc:title>Guia do Sysadmin Linux</dc:title>
 		<dc:creator opf:role="aut" opf:file-as="Fábio Rodrigues Ribeiro">Fábio Rodrigues Ribeiro</dc:creator>
 
 		<!-- dc:date opf:event="original-publication">2015</dc:date>
