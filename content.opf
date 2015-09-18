@@ -26,8 +26,8 @@ permalink: /OEBPS/content.opf
 	<manifest>
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
 
-		<item id="introducao" href="introducao.html" media-type="application/xhtml+xml" />
-		<item id="servidores" href="servidores.html" media-type="application/xhtml+xml" />
+		<item id="introducao" href="01-introducao.html" media-type="application/xhtml+xml" />
+		<item id="sistemas" href="03-sistemas.html" media-type="application/xhtml+xml" />
 
 		<!-- CSS Style Sheets -->
 		<item id="main-css" href="main.css" media-type="text/css"/>
@@ -40,6 +40,6 @@ permalink: /OEBPS/content.opf
 		<!--itemref idref="titulo" linear="yes"/-->
 
 		<itemref idref="introducao" linear="yes"/>
-		<itemref idref="servidores" linear="yes"/>
+		<itemref idref="sistemas" linear="yes"/>
 	</spine>
 </package>
