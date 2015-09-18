@@ -2,28 +2,47 @@
 permalink: /OEBPS/content.opf
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-
-<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="EPB-UUID" version="2.0">
-	<metadata xmlns:opf="http://www.idpf.org/2007/opf"
-				 xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:title>Guia do Sysadmin Linux</dc:title>
-		<dc:creator opf:role="aut" opf:file-as="Fábio Rodrigues Ribeiro">Fábio Rodrigues Ribeiro</dc:creator>
-
-		<!-- dc:date opf:event="original-publication">2015</dc:date>
-		<dc:date opf:event="epub-publication"> </dc:date -->
-
-		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>
-		<dc:subject>Mostrando aos sysadmins como é o mundo dos developers</dc:subject>
-
-		<!-- dc:source></dc:source>
-		<dc:rights></dc:rights -->
-
-		<dc:identifier id="EPB-UUID">minhaid</dc:identifier>
+<package unique-identifier="bookid" version="3.0"
+xmlns="http://www.idpf.org/2007/opf"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:opf="http://www.idpf.org/2007/opf"
+prefix="rendition: http://www.idpf.org/vocab/rendition/#
+ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0">
+	<metadata>
+		<dc:title>I Love to Doodle</dc:title>
 		<dc:language>pt-br</dc:language>
-	</metadata>
+		<dc:identifier id="bookid"></dc:identifier>
+		<meta refines="#bookid" property="marc:scheme">isbn</meta>
+		<dc:creator id="author">Taylor Beres</dc:creator>
+		<meta refines="#author" property="file-as">Beres, Taylor</meta>
+		<meta refines="#author" property="role">aut</meta>
+		<dc:contributor id="illustrator">Taylor Beres</dc:contributor>
+		<meta refines="#illustrator" property="role">ill</meta>
+		<dc:contributor id="illustrator2">Jay Nick</dc:contributor>
+		<meta refines="#illustrator2" property="role">ill</meta>
+		<dc:date>2011-08-26</dc:date>
+		<dc:description>One of life's most popular pastimes, doodling, is presented for those who like art, math, and/or computers.
+		This short book shows the artistry in math and the math in artistry.
+		See how a teenager and her grandfather have different approaches for their doodles.
+		This deceptively simple book provides a step by step guide to one teenager's favorite doodles, free-hand or using Scalable Vector Graphics (SVG).
+		</dc:description>
+		<dc:subject>JUV054000 JUVENILE FICTION / Activity Books, CRA000000 CRAFTS &amp; HOBBIES / General, ART028000 ART / Techniques / General</dc:subject>
+		<dc:publisher>Catto Creations</dc:publisher>
+		<dc:rights>Copyright Catto Creations 2011.  All rights reserved.</dc:rights>
 
-	<!-- Documentos -->
+		<meta property="ibooks:version">1.0</meta>
+		<meta property="dcterms:modified">2013-01-23T13:00:00Z</meta>
+		<meta name="cover" content="CoverImage" />
+
+		<meta property="rendition:layout">pre-paginated</meta>
+		<meta property="rendition:spread">auto</meta>
+		<meta property="rendition:orientation">auto</meta>
+		<meta property="ibooks:iphone-orientation-lock">landscape</meta>
+	</metadata>
 	<manifest>
+		<!-- Documentos -->
+		<item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
 
 		<item id="introducao" href="01-introducao.html" media-type="application/xhtml+xml" />
@@ -31,7 +50,6 @@ permalink: /OEBPS/content.opf
 
 		<!-- CSS Style Sheets -->
 		<item id="main-css" href="main.css" media-type="text/css"/>
-
 		<!-- NCX -->
 		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
 	</manifest>
