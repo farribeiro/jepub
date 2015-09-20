@@ -45,8 +45,8 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
 
-		<item id="introducao" href="01-introducao.html" media-type="application/xhtml+xml" />
-		<item id="sistemas" href="03-sistemas.html" media-type="application/xhtml+xml" />
+		<item id="introducao" href="01-introducao.xhtml" media-type="application/xhtml+xml" />
+		<item id="sistemas" href="03-sistemas.xhtml" media-type="application/xhtml+xml" />
 
 		<!-- CSS Style Sheets -->
 		<item id="main-css" href="main.css" media-type="text/css"/>
