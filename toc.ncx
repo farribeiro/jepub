@@ -28,7 +28,7 @@ permalink: /OEBPS/toc.ncx
 			</navLabel>
 			<content src="titulo.html"/>
 		</navPoint-->
-		<navPoint id="introducao" playOrder="2">
+		<navPoint id="introducao" playOrder="1">
 			<navLabel>
 				<text>INTRODUÇÃO</text>
 			</navLabel>
