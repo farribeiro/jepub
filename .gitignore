@@ -9,3 +9,4 @@
 Makefile
 _site
 .sass-cache
+.directory
