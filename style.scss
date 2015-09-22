@@ -1,15 +1,20 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
-permalink: /OEBPS/main.css
+permalink: /OEBPS/style.css
 ---
 @charset "utf-8";
 
 body{
 	font: 1em serif;
+	padding: 0;
 }
 
 h1{
 	text-align: center;
+}
+
+p{
+	text-indent: .3in;
 }
 
 .prefont{
