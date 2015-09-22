@@ -9,23 +9,25 @@ xmlns:opf="http://www.idpf.org/2007/opf"
 prefix="rendition: http://www.idpf.org/vocab/rendition/#
 ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0">
 	<metadata>
-		<dc:title>I Love to Doodle</dc:title>
+		<dc:title>{{ site.title }}</dc:title>
 		<dc:language>pt-br</dc:language>
-		<dc:identifier id="bookid"></dc:identifier>
+
+		<!-- dc:identifier id="bookid"></dc:identifier -->
+		
 		<meta refines="#bookid" property="marc:scheme">isbn</meta>
-		<dc:creator id="author">Taylor Beres</dc:creator>
-		<meta refines="#author" property="file-as">Beres, Taylor</meta>
+		<dc:creator id="author">{{ site.author }}</dc:creator>
+
+		<!-- meta refines="#author" property="file-as"></meta -->
+
 		<meta refines="#author" property="role">aut</meta>
-		<dc:contributor id="illustrator">Taylor Beres</dc:contributor>
-		<meta refines="#illustrator" property="role">ill</meta>
-		<dc:contributor id="illustrator2">Jay Nick</dc:contributor>
-		<meta refines="#illustrator2" property="role">ill</meta>
-		<dc:date>2011-08-26</dc:date>
-		<dc:description>One of life's most popular pastimes, doodling, is presented for those who like art, math, and/or computers.
-		This short book shows the artistry in math and the math in artistry.
-		See how a teenager and her grandfather have different approaches for their doodles.
-		This deceptively simple book provides a step by step guide to one teenager's favorite doodles, free-hand or using Scalable Vector Graphics (SVG).
-		</dc:description>
+		
+		<!-- dc:contributor id="illustrator"></dc:contributor>
+		<meta refines="#illustrator" property="role"></meta>
+		<dc:contributor id="illustrator2"></dc:contributor>
+		<meta refines="#illustrator2" property="role"></meta>
+		<dc:date></dc:date -->
+
+		<dc:description>{{ site.description }}</dc:description>
 		<dc:subject>JUV054000 JUVENILE FICTION / Activity Books, CRA000000 CRAFTS &amp; HOBBIES / General, ART028000 ART / Techniques / General</dc:subject>
 		<dc:publisher>Catto Creations</dc:publisher>
 		<dc:rights>Copyright Catto Creations 2011.  All rights reserved.</dc:rights>
@@ -45,7 +47,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
 
-		{% assign sorted_posts = (site.posts | sort: 'title') %}{% for post in sorted_posts %}<item id="{{ post.title }}" href="{{ post.url }}" media-type="application/xhtml+xml" />
+		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<item id="{{ post.title }}" href="{{ post.url | replace: "/OEBPS/","" }}" media-type="application/xhtml+xml" />
 		{% endfor %}
 		<!-- CSS Style Sheets -->
 		<item id="main-css" href="style.css" media-type="text/css"/>
@@ -57,7 +59,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 	<spine toc="ncx">
 		<!--itemref idref="titulo" linear="yes"/-->
 
-		{% assign sorted_posts = (site.posts | sort: 'title') %}{% for post in sorted_posts %}<itemref idref="{{ post.title }}" linear="yes"/>
+		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<itemref idref="{{ post.title }}" linear="yes"/>
 		{% endfor %}
 	</spine>
 </package>

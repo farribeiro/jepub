@@ -16,10 +16,10 @@ permalink: /OEBPS/toc.ncx
 		<meta name="dtb:maxPageNumber" content="0"/>
 	</head>
 	<docTitle>
-		<text>Saga do primeiro ePub</text>
+		<text>{{ site.title }}</text>
 	</docTitle>
 	<docAuthor>
-		<text>Dani</text>
+		<text>{{ site.author }}</text>
 	</docAuthor>
 	<navMap>
 		<!-- navPoint id="titulo" playOrder="1">
@@ -28,18 +28,12 @@ permalink: /OEBPS/toc.ncx
 			</navLabel>
 			<content src="titulo.html"/>
 		</navPoint-->
-		<navPoint id="introducao" playOrder="1">
+		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<navPoint id="{{ post.title }}" playOrder="1">
 			<navLabel>
-				<text>INTRODUÇÃO</text>
+				<text>{{ post.title }}</text>
 			</navLabel>
-			<content src="01-introducao.xhtml"/>
+			<content src="{{ post.url | replace: "/OEBPS/","" }}"/>
 		</navPoint>
-                <navPoint id="servidores" playOrder="2">
-			<navLabel>
-				<text>SERVIDORES</text>
-			</navLabel>
-			<content src="03-servidores.xhtml"/>
-		</navPoint>
-
+		{% endfor %}
 	</navMap>
 </ncx>
