@@ -25,3 +25,17 @@ p{
 .underline{
 	text-decoration: underline;
 }
+
+table, td, tr, th{
+	padding: .5em;
+	text-align: center;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+blockquote{
+	//margin-left: 2in;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #ccc;
+}
