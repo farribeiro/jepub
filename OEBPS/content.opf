@@ -46,10 +46,11 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
 		<!-- item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/ -->
 
+		<item id="capa" href="html/capa.html" media-type="application/xhtml+xml" />
 		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<item id="{{ post.title }}" href="{{ post.url | replace: "/OEBPS/","" }}" media-type="application/xhtml+xml" />
 		{% endfor %}
 		<!-- CSS Style Sheets -->
-		<item id="main-css" href="style.css" media-type="text/css"/>
+		<item id="main-css" href="css/style.css" media-type="text/css"/>
 		
 		<!-- NCX -->
 		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
