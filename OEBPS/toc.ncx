@@ -27,7 +27,8 @@
 			</navLabel>
 			<content src="titulo.html"/>
 		</navPoint-->
-		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<navPoint id="{{ post.title }}" playOrder="1">
+		{% assign post_count = 1 %}
+		{% assign sorted_posts = (site.posts | sort: 'url') %}{% for post in sorted_posts %}<navPoint id="{{ post.title }}" playOrder="{{ post_count }}"> {% assign post_count = post_count | plus: 1 %}
 			<navLabel>
 				<text>{{ post.title }}</text>
 			</navLabel>
