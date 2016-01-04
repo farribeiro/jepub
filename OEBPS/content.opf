@@ -35,7 +35,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<meta property="dcterms:modified">2013-01-23T13:00:00Z</meta>
 		<meta name="cover" content="CoverImage" />
 
-		<meta property="rendition:layout">pre-paginated</meta>
+		<!-- meta property="rendition:layout">pre-paginated</meta -->
 		<meta property="rendition:spread">auto</meta>
 		<meta property="rendition:orientation">auto</meta>
 		<meta property="ibooks:iphone-orientation-lock">landscape</meta>
