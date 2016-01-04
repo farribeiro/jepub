@@ -27,9 +27,9 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<dc:date></dc:date -->
 
 		<dc:description>{{ site.description }}</dc:description>
-		<dc:subject>JUV054000 JUVENILE FICTION / Activity Books, CRA000000 CRAFTS &amp; HOBBIES / General, ART028000 ART / Techniques / General</dc:subject>
-		<dc:publisher>Catto Creations</dc:publisher>
-		<dc:rights>Copyright Catto Creations 2011.  All rights reserved.</dc:rights>
+		<dc:subject></dc:subject>
+		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>
+		<dc:rights>Fábio Rodrigues Ribeiro - Todos os direitos reservados</dc:rights>
 
 		<meta property="ibooks:version">1.0</meta>
 		<meta property="dcterms:modified">2013-01-23T13:00:00Z</meta>
