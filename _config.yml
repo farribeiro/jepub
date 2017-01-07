@@ -12,7 +12,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # premalink path
-permalink: /OEBPS/html/:title.html
+permalink: /OEBPS/html/:title:output_ext
 
 # Build settings
 markdown: kramdown
