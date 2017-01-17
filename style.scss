@@ -31,10 +31,30 @@ table, td, tr, th{
 	border-collapse: collapse;
 }
 
-blockquote{
-	//margin-left: 2in;
-	text-indent: 0;
-	padding: 5px;
-	border: 1px solid #aaa;
-	background-color: #ccc;
+
+// blockquote{
+	// margin-left: 2in;
+	// text-indent: 0;
+	// padding: 5px;
+	// border: 1px solid #aaa;
+	// background-color: #ccc;
+// }
+
+blockquote {
+	width:10em;
+	margin:0.25em 0.75em 0.25em 0;
+	padding:0.5em;
+	border:5px solid #1B486F;
+	border-width:5px 0;
+	text-align:left;
+	color:#333;
+	font:italic 1.4em/1.3 Georgia;
+        
+        .left{
+            float: left;
+        }
+        
+        .right{
+            float: right;
+        }
 }
