@@ -6,7 +6,7 @@ permalink: /OEBPS/css/style.css
 
 body{
 	font: 1em serif;
-//	margin: 2%;
+	// margin: 2%;
 }
 
 h1{text-align: center;}
@@ -49,12 +49,7 @@ blockquote {
 	text-align:left;
 	color:#333;
 	font:italic 1.4em/1.3 Georgia;
-        
-        .left{
-            float: left;
-        }
-        
-        .right{
-            float: right;
-        }
+
+	.left{float: left;}
+	.right{float: right;}
 }
