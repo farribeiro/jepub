@@ -11,7 +11,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<dc:title>{{ site.title }}</dc:title>
 		<dc:language>pt-br</dc:language>
 
-		<!-- dc:identifier id="bookid"></dc:identifier -->
+		<dc:identifier id="bookid">{{ site.opf_isbn }}</dc:identifier>
 		
 		<meta refines="#bookid" property="marc:scheme">isbn</meta>
 		<dc:creator id="author">{{ site.author }}</dc:creator>
@@ -27,7 +27,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<dc:date></dc:date -->
 
 		<dc:description>{{ site.description }}</dc:description>
-		<dc:subject></dc:subject>
+		<dc:subject>{{ site.description }}</dc:subject>
 		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>
 		<dc:rights>Fábio Rodrigues Ribeiro - Todos os direitos reservados</dc:rights>
 

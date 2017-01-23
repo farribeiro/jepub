@@ -16,3 +16,5 @@ permalink: /OEBPS/html/:title:output_ext
 
 # Build settings
 markdown: kramdown
+
+opf_isbn: 1234
