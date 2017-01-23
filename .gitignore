@@ -10,3 +10,5 @@ Makefile
 _site
 .sass-cache
 .directory
+_posts
+_drafts
