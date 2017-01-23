@@ -34,6 +34,7 @@ a {
 	text-decoration: underline;
 }
 
+//Tabelas
 table, td, tr, th {
 	padding: .5em;
 	text-align: center;
@@ -41,16 +42,17 @@ table, td, tr, th {
 	border-collapse: collapse;
 }
 
-
-// blockquote {
-	// margin-left: 2in;
-	// text-indent: 0;
-	// padding: 5px;
-	// border: 1px solid #aaa;
-	// background-color: #ccc;
-// }
-
+// Citações
 blockquote {
+	margin-left: 2in;
+	text-indent: 0;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #ccc;
+}
+
+// Pullquotes ou Olho
+aside {
 	width:10em;
 	margin:0.25em 0.75em 0.25em 0;
 	padding:0.5em;
@@ -60,11 +62,11 @@ blockquote {
 	color:#333;
 	font:italic 1.4em/1.3 Georgia;
 
-	.left {
+	.pullquote-left {
 		float: left;
 	}
 
-	.right {
+	.pullquote-right {
 		float: right;
 	}
 }
