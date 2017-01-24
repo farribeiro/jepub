@@ -23,9 +23,9 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<!-- dc:contributor id="illustrator"></dc:contributor>
 		<meta refines="#illustrator" property="role"></meta>
 		<dc:contributor id="illustrator2"></dc:contributor>
-		<meta refines="#illustrator2" property="role"></meta>
-		<dc:date></dc:date -->
-
+		<meta refines="#illustrator2" property="role"></meta> -->
+		
+		<dc:date>{{ site.pub_date }}</dc:date>
 		<dc:description>{{ site.description }}</dc:description>
 		<dc:subject>{{ site.description }}</dc:subject>
 		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>

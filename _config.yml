@@ -18,3 +18,4 @@ permalink: /OEBPS/html/:title:output_ext
 markdown: kramdown
 
 opf_isbn: 1234
+pub_date: "2017-01-23T22:00:00Z"
