@@ -69,15 +69,15 @@ aside {
 	p{
 		@extend .p-indent;
 	}
+}
 
-	.pullquote-left {
+aside.pullquote-left {
 		float: left;
 	}
 
-	.pullquote-right {
+aside.pullquote-right {
 		float: right;
 	}
-}
 
 // section{
 // 	page-break-before:always;
