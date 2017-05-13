@@ -9,30 +9,21 @@ body {
 	// margin: 2%;
 }
 
-h1 {
-	text-align: center;
-}
+h1 {@extend .txtcenter}
 
-img {
-	max-width: 100%;
-}
 
-// h1, h2, h3 {
-	// text-transform: initial;
-// }
+img {max-width: 100%;}
+
+// h1, h2, h3 {text-transform: initial;}
 
 p {
 	text-indent: .3in;
 	margin: 0;
 }
 
-a {
-	text-decoration:none;
-}
+a {text-decoration:none;}
 
-.underline {
-	text-decoration: underline;
-}
+.underline {text-decoration: underline;}
 
 //Tabelas
 table, td, tr, th {
@@ -50,9 +41,7 @@ blockquote {
 	border: 1px solid #aaa;
 	background-color: #ccc;
 
-	p{
-		@extend .p-indent;
-	}
+	p{@extend .p-indent;}
 }
 
 // Pullquotes ou Olho
@@ -66,20 +55,26 @@ aside {
 	color:#333;
 	font:italic 1.4em/1.3 Georgia;
 
-	p{
-		@extend .p-indent;
-	}
+	p{@extend .p-indent;}
 }
 
-aside.pullquote-left {
-		float: left;
-	}
+aside.pleft {float: left;}
 
-aside.pullquote-right {
-		float: right;
-	}
+aside.pright {float: right;}
 
-// section{
-// 	page-break-before:always;
-// }
- .p-indent{ text-indent: 0;}
+// section{page-break-before:always;}
+
+.fleft{float: left;}
+
+.fright{float: right;}
+
+.fcenter{@extend .txtcenter;}
+
+// Poesia
+pre.poesia{
+	text-indent: -2em;
+	margin-left: 2em;
+}
+
+.p-indent{text-indent: 0;}
+.txtcenter{text-align: center;}
