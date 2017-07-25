@@ -16,14 +16,18 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<meta refines="#bookid" property="marc:scheme">isbn</meta>
 		<dc:creator id="author">{{ site.author }}</dc:creator>
 
-		<!-- meta refines="#author" property="file-as"></meta -->
+		<!--
+		<meta refines="#author" property="file-as"></meta>
+		-->
 
 		<meta refines="#author" property="role">aut</meta>
 		
-		<!-- dc:contributor id="illustrator"></dc:contributor>
+		<!--
+		<dc:contributor id="illustrator"></dc:contributor>
 		<meta refines="#illustrator" property="role"></meta>
 		<dc:contributor id="illustrator2"></dc:contributor>
-		<meta refines="#illustrator2" property="role"></meta> -->
+		<meta refines="#illustrator2" property="role"></meta>
+		-->
 		
 		<dc:date>{{ site.pub_date }}</dc:date>
 		<dc:description>{{ site.description }}</dc:description>
@@ -35,7 +39,9 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<meta property="dcterms:modified">{{ site.time | date: "%FT%XZ" }}</meta>
 		<meta name="cover" content="CoverImage" />
 
-		<!-- meta property="rendition:layout">pre-paginated</meta -->
+		<!--
+		<meta property="rendition:layout">pre-paginated</meta>
+		-->
 		<meta property="rendition:spread">auto</meta>
 		<meta property="rendition:orientation">auto</meta>
 		<meta property="ibooks:iphone-orientation-lock">landscape</meta>
@@ -43,8 +49,10 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 	<manifest>
 		<!-- Documentos -->
 
-		<!-- item id="titulo" href="titulo.html" media-type="application/xhtml+xml" / -->
-		<!-- item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/ -->
+		<!--
+		<item id="titulo" href="titulo.html" media-type="application/xhtml+xml" />
+		<item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+		-->
 
 		<item id="capa" href="html/capa.html" media-type="application/xhtml+xml" />
 		<item id="sumario" properties="nav" href="html/sumario.html" media-type="application/xhtml+xml" />
@@ -59,7 +67,9 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 	</manifest>
 
 	<spine toc="ncx">
-		<!--itemref idref="titulo" linear="yes"/-->
+		<!--
+		<itemref idref="titulo" linear="yes"/>
+		-->
 
 		<itemref idref="capa" linear="yes"/>
 		<itemref idref="sumario" linear="yes"/>
