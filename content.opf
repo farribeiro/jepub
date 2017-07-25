@@ -33,7 +33,7 @@ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0"
 		<dc:date>{{ site.pub_date }}</dc:date>
 		<dc:description>{{ site.description }}</dc:description>
 		<dc:subject>{{ site.description }}</dc:subject>
-		<dc:publisher>Fábio Rodrigues Ribeiro</dc:publisher>
+		<dc:publisher>{{ site.author }}</dc:publisher>
 		<dc:rights>Fábio Rodrigues Ribeiro - Todos os direitos reservados</dc:rights>
 
 		<meta property="ibooks:version">1.0</meta>
