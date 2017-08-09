@@ -64,10 +64,6 @@ aside {
 
 // section{page-break-before:always;}
 
-.fleft{float: left;}
-
-.fright{float: right;}
-
 .fcenter{@extend .txtcenter;}
 
 // Poesia
@@ -78,3 +74,5 @@ pre.poesia{
 
 .p-indent{text-indent: 0;}
 .txtcenter{text-align: center;}
+.fleft{float: left;}
+.fright{float: right;}
