@@ -56,11 +56,11 @@ aside {
 	font:italic 1.4em/1.3 Georgia;
 
 	p{@extend .p-indent;}
+
+	.pleft { @extend .fleft; }
+
+	.pright { @extend .fright; }
 }
-
-aside.pleft {float: left;}
-
-aside.pright {float: right;}
 
 // section{page-break-before:always;}
 
