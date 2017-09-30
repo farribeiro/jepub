@@ -62,6 +62,37 @@ aside {
 	.pright { @extend .fright; }
 }
 
+// Notas
+div {
+    margin-bottom: 15px;
+    padding: 4px 12px;
+
+	.danger {
+	    background-color: #ffdddd;
+	    border-color: #fff #fff #fff #f44336;
+	    @extend .bleft;
+	}
+
+	.success {
+	    background-color: #ddffdd;
+	    border-color: #fff #fff #fff #4CAF50;
+	    @extend .bleft;
+	}
+
+	.info {
+	    background-color: #e7f3fe;
+	    border-color: #fff #fff #fff #2196F3;
+	    @extend .bleft;
+	}
+
+
+	.warning {
+	    background-color: #ffffcc;
+	    border-color: #fff #fff #fff #ffeb3b;
+	    @extend .bleft;
+	}
+}
+
 // section{page-break-before:always;}
 
 .fcenter{@extend .txtcenter;}
