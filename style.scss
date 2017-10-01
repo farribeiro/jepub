@@ -104,13 +104,14 @@ div {
 
 // section{page-break-before:always;}
 
-.fcenter{@extend .txtcenter;}
-
 // Poesia
 pre.poesia{
 	text-indent: -2em;
 	margin-left: 2em;
 }
+
+// Paragrafo no centro
+.fcenter{ @extend .txtcenter; }
 
 .p-indent{text-indent: 0;}
 .txtcenter{text-align: center;}
