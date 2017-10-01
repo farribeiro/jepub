@@ -46,7 +46,8 @@ blockquote {
 	// margin-left: 2in;
 	@extend .p-indent;
 	padding: 5px;
-	border-left: 10px solid #aaa;
+	border-color: #fff #fff #fff #aaa;
+	@extend .bleft;
 	//background-color: #ccc;
 
 	p{@extend .p-indent;}
@@ -115,3 +116,4 @@ pre.poesia{
 .txtcenter{text-align: center;}
 .fleft{float: left;}
 .fright{float: right;}
+.bleft{border-left: 6px solid;}
