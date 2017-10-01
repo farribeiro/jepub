@@ -14,16 +14,24 @@ h1 {@extend .txtcenter}
 
 img {max-width: 100%;}
 
+a {text-decoration:none;}
+
+span .underline {text-decoration: underline;}
+
+span .capitular {
+	float: left;
+	line-height: 1;
+	font-size: 4em;
+	margin-right: 0.1em;
+	font-weight: bold;
+}
+
 // h1, h2, h3 {text-transform: initial;}
 
 p {
 	text-indent: .3in;
 	margin: 0;
 }
-
-a {text-decoration:none;}
-
-.underline {text-decoration: underline;}
 
 //Tabelas
 table, td, tr, th {
@@ -38,7 +46,8 @@ blockquote {
 	// margin-left: 2in;
 	@extend .p-indent;
 	padding: 5px;
-	border-left: 10px solid #aaa;
+	border-color: #fff #fff #fff #aaa;
+	@extend .bleft;
 	//background-color: #ccc;
 
 	p{@extend .p-indent;}
@@ -57,14 +66,43 @@ aside {
 
 	p{@extend .p-indent;}
 
-	.pleft { @extend .fleft; }
+	.left { @extend .fleft; }
 
-	.pright { @extend .fright; }
+	.right { @extend .fright; }
+}
+
+// Notas
+div {
+    margin-bottom: 15px;
+    padding: 4px 12px;
+
+	.danger {
+	    background-color: #ffdddd;
+	    border-color: #fff #fff #fff #f44336;
+	    @extend .bleft;
+	}
+
+	.success {
+	    background-color: #ddffdd;
+	    border-color: #fff #fff #fff #4CAF50;
+	    @extend .bleft;
+	}
+
+	.info {
+	    background-color: #e7f3fe;
+	    border-color: #fff #fff #fff #2196F3;
+	    @extend .bleft;
+	}
+
+
+	.warning {
+	    background-color: #ffffcc;
+	    border-color: #fff #fff #fff #ffeb3b;
+	    @extend .bleft;
+	}
 }
 
 // section{page-break-before:always;}
-
-.fcenter{@extend .txtcenter;}
 
 // Poesia
 pre.poesia{
@@ -72,7 +110,11 @@ pre.poesia{
 	margin-left: 2em;
 }
 
+// Paragrafo no centro
+.fcenter{ @extend .txtcenter; }
+
 .p-indent{text-indent: 0;}
 .txtcenter{text-align: center;}
 .fleft{float: left;}
 .fright{float: right;}
+.bleft{border-left: 6px solid;}
