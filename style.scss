@@ -66,9 +66,9 @@ aside {
 
 	p{@extend .p-indent;}
 
-	.pleft { @extend .fleft; }
+	.left { @extend .fleft; }
 
-	.pright { @extend .fright; }
+	.right { @extend .fright; }
 }
 
 // Notas
