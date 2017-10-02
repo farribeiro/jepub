@@ -11,7 +11,6 @@ body {
 
 h1 {@extend .txtcenter}
 
-
 img {max-width: 100%;}
 
 a {text-decoration:none;}
@@ -94,7 +93,6 @@ div {
 	    @extend .bleft;
 	}
 
-
 	.warning {
 	    background-color: #ffffcc;
 	    border-color: #fff #fff #fff #ffeb3b;
@@ -111,10 +109,9 @@ pre.poesia{
 }
 
 // Paragrafo no centro
-.fcenter{ @extend .txtcenter; }
+.txtcenter{text-align: center;}
 
 .p-indent{text-indent: 0;}
-.txtcenter{text-align: center;}
 .fleft{float: left;}
 .fright{float: right;}
 .bleft{border-left: 6px solid;}
