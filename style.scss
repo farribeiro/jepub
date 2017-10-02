@@ -81,6 +81,11 @@ div {
 		@extend .bleft;
 	}
 
+.danger::before{
+	content: "☠️  Perigo:";
+	@extend .fweight;
+}
+
 	.success {
 		background-color: #ddffdd;
 		border-color: #fff #fff #fff #4CAF50;
@@ -93,11 +98,20 @@ div {
 		@extend .bleft;
 	}
 
+.info::before{
+	content: "ℹ️  Informação:";
+	@extend .fweight;
+}
+
 	.warning {
 		background-color: #ffffcc;
 		border-color: #fff #fff #fff #ffeb3b;
 		@extend .bleft;
 	}
+
+.warning::before{
+	content: "⚠️  Atenção:";
+	@extend .fweight;
 }
 
 // section{page-break-before:always;}
