@@ -21,8 +21,8 @@ span .capitular {
 	float: left;
 	line-height: 1;
 	font-size: 4em;
+	@extend .fweight;
 	margin-right: 0.1em;
-	font-weight: bold;
 }
 
 // h1, h2, h3 {text-transform: initial;}
@@ -115,3 +115,4 @@ pre.poesia{
 .fleft{float: left;}
 .fright{float: right;}
 .bleft{border-left: 6px solid;}
+.fweight{font-weight: bold;}
