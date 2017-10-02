@@ -9,8 +9,7 @@ body {
 	// margin: 2%;
 }
 
-h1 {@extend .txtcenter}
-
+h1 {@extend .txtcenter;}
 
 img {max-width: 100%;}
 
@@ -22,8 +21,8 @@ span .capitular {
 	float: left;
 	line-height: 1;
 	font-size: 4em;
+	@extend .fweight;
 	margin-right: 0.1em;
-	font-weight: bold;
 }
 
 // h1, h2, h3 {text-transform: initial;}
@@ -36,7 +35,7 @@ p {
 //Tabelas
 table, td, tr, th {
 	padding: .5em;
-	text-align: center;
+	@extend .txtcenter;
 	border: 1px solid #000;
 	border-collapse: collapse;
 }
@@ -75,31 +74,46 @@ aside {
 div {
     margin-bottom: 15px;
     padding: 4px 12px;
-
-	.danger {
-	    background-color: #ffdddd;
-	    border-color: #fff #fff #fff #f44336;
-	    @extend .bleft;
-	}
-
-	.success {
-	    background-color: #ddffdd;
-	    border-color: #fff #fff #fff #4CAF50;
-	    @extend .bleft;
-	}
-
-	.info {
-	    background-color: #e7f3fe;
-	    border-color: #fff #fff #fff #2196F3;
-	    @extend .bleft;
-	}
+}
 
 
-	.warning {
-	    background-color: #ffffcc;
-	    border-color: #fff #fff #fff #ffeb3b;
-	    @extend .bleft;
-	}
+.danger {
+	background-color: #ffdddd;
+	border-color: #fff #fff #fff #f44336;
+	@extend .bleft;
+}
+
+.danger::before{
+	content: "☠️  Perigo:";
+	@extend .fweight;
+}
+
+.success {
+	background-color: #ddffdd;
+	border-color: #fff #fff #fff #4CAF50;
+	@extend .bleft;
+}
+
+.info {
+	background-color: #e7f3fe;
+	border-color: #fff #fff #fff #2196F3;
+	@extend .bleft;
+}
+
+.info::before{
+	content: "ℹ️  Informação:";
+	@extend .fweight;
+}
+
+.warning {
+	background-color: #ffffcc;
+	border-color: #fff #fff #fff #ffeb3b;
+	@extend .bleft;
+}
+
+.warning::before{
+	content: "⚠️  Atenção:";
+	@extend .fweight;
 }
 
 // section{page-break-before:always;}
@@ -111,10 +125,10 @@ pre.poesia{
 }
 
 // Paragrafo no centro
-.fcenter{ @extend .txtcenter; }
+.txtcenter{text-align: center;}
 
 .p-indent{text-indent: 0;}
-.txtcenter{text-align: center;}
 .fleft{float: left;}
 .fright{float: right;}
 .bleft{border-left: 6px solid;}
+.fweight{font-weight: bold;}
