@@ -36,7 +36,7 @@ p {
 //Tabelas
 table, td, tr, th {
 	padding: .5em;
-	text-align: center;
+	@extend .txtcenter;
 	border: 1px solid #000;
 	border-collapse: collapse;
 }
