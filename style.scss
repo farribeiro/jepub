@@ -77,39 +77,39 @@ div {
 }
 
 
-	.danger {
-		background-color: #ffdddd;
-		border-color: #fff #fff #fff #f44336;
-		@extend .bleft;
-	}
+.danger {
+	background-color: #ffdddd;
+	border-color: #fff #fff #fff #f44336;
+	@extend .bleft;
+}
 
 .danger::before{
 	content: "☠️  Perigo:";
 	@extend .fweight;
 }
 
-	.success {
-		background-color: #ddffdd;
-		border-color: #fff #fff #fff #4CAF50;
-		@extend .bleft;
-	}
+.success {
+	background-color: #ddffdd;
+	border-color: #fff #fff #fff #4CAF50;
+	@extend .bleft;
+}
 
-	.info {
-		background-color: #e7f3fe;
-		border-color: #fff #fff #fff #2196F3;
-		@extend .bleft;
-	}
+.info {
+	background-color: #e7f3fe;
+	border-color: #fff #fff #fff #2196F3;
+	@extend .bleft;
+}
 
 .info::before{
 	content: "ℹ️  Informação:";
 	@extend .fweight;
 }
 
-	.warning {
-		background-color: #ffffcc;
-		border-color: #fff #fff #fff #ffeb3b;
-		@extend .bleft;
-	}
+.warning {
+	background-color: #ffffcc;
+	border-color: #fff #fff #fff #ffeb3b;
+	@extend .bleft;
+}
 
 .warning::before{
 	content: "⚠️  Atenção:";
