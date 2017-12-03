@@ -33,6 +33,10 @@ p {
 }
 
 //Tabelas
+table{
+	width: 100%;
+}
+
 table, td, tr, th {
 	padding: .5em;
 	@extend .txtcenter;
